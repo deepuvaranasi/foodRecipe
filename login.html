@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validated LoginForm</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<section class="grid-container">
+    <header>
+        <img src="img/logo.jpg" class="logo">
+        <h1 style="color:maroon;"><i>Just Rice!</i></h1>
+        </header>
+        <nav>
+            <a class="active" href="index1.html">Home</a>
+            <a href="riceRecipes.html">Rice Recipes</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+</section>
+   <main>
+       <div class="container">
+           <form class="login-form" action="page.html" method="post" name="form" onsubmit="return validated()">
+
+               <div class="font">Email or Phone</div>
+               <input  name="email" type="text" placeholder="username">
+
+               <div id="email_error">Please fill up your Email or phone</div>
+
+               <div class="font font2">Password</div>
+               <input  name="password" type="password" placeholder="password">
+
+               <div id="pass_error">Please fill up your password</div>
+
+               <button type="submit">Login</button>
+
+               <script  type="text/javascript" src="js/script.js"></script>
+           </form>
+       </div>
+   </main>
+
+<footer>
+    <div class="footer-bottom">
+        <p>copywrite &copy;2021 just rice!.designed by <span>Deepu</span></p>
+    </div>
+</footer>
+</body>
+</html>
+
