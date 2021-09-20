@@ -1,0 +1,16 @@
+{
+  "select":[
+  {
+    "id": "1",
+    "name": "Veg dum biryani"
+  },
+    {
+      "id": "2",
+      "name": "Jeera rice"
+    },
+    {
+      "id": "2",
+      "name": "Lemon rice"
+    }
+]
+}

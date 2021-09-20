@@ -1,39 +1,37 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: #FFBD00;
     color: black;
     margin: 20px;
-    /*font-family: 'Open Sans', sans-serif;*/
 }
 header {
     text-align: center;
 }
-
 h1{
-    font-size: 50px;
+    font-size: 30px;
     display: inline-flex;
-
 }
 .logo {
     float: top ;
-    width: 60px;
+    width: 40px;
     height: auto;
-    /*display: inline;*/
-
 }
 nav{
-    margin-top:10px;
     flex: 1;
-    margin-left: 30px;
-    margin-right: auto;
-    /*width: 50%;*/
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 40px;
     list-style-type: none;
 }
 nav a{
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
     color: #fff;
-    padding: 10px 40px;
+    padding: 0px 30px 0px 30px;
     border: 1px solid transparent;
     transition: 0.6s ease;
 }
@@ -41,9 +39,8 @@ nav a:hover{
     background-color: white;
     color: black;
 }
-nav.active a{
-    background-color: white;
-    color: black;
+main{
+    margin: 30px auto;
 }
 section.grid-container{
     width: 1000px;
@@ -112,22 +109,20 @@ section.grid-container{
 }
 footer{
     margin: 30px auto;
+    margin-left: 30px;
     background: black;
     text-align: center;
-    font-family: "Open Sans";
-    /*padding-top:10px;*/
     color: white;
 }
 .footer-bottom{
     background: black;
-    width: 50vw;
-    /*padding: 20px 0;*/
+    width: 80vw;
     text-align: center;
     margin: 50px auto;
-    margin-right: 10px;
-    margin-left: 10px;
+
 }
 .footer-bottom p{
+    /*margin: 0px 40px 0 50px;*/
     text-align: center;
     font-size: 14px;
     word-spacing: 2px;
@@ -138,7 +133,6 @@ footer{
     opacity: .4;
     font-weight: 200;
 }
-
 
 
 
