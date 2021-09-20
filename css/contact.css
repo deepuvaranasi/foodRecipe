@@ -22,8 +22,9 @@ h1{
     height: auto;
 }
 nav{
+    margin-top: 20px;
     flex: 1;
-    margin-left: 100px;
+    margin-left: 120px;
     margin-right: 40px;
     list-style-type: none;
 }
@@ -45,6 +46,7 @@ section.grid-container{
 }
 
 .contact-section h1{
+    margin-top: 20px;
     margin-left: 450px;
     text-align: center;
     color: maroon;
