@@ -1,35 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #FFBD00;
     color: black;
     margin: 20px;
-  }
+}
+
 header {
     text-align: center;
 }
 
-h1{
+h1 {
     font-size: 30px;
     display: inline-flex;
 }
+
 .logo {
-    float: top ;
+    float: top;
     width: 40px;
     height: auto;
     /*display: inline;*/
 
 }
-nav{
+
+nav {
+    margin-top: 20px;
     flex: 1;
     margin-left: 100px;
     margin-right: 40px;
     list-style-type: none;
 }
-nav a{
+
+nav a {
     font-size: 25px;
     text-decoration: none;
     color: #fff;
@@ -37,20 +44,22 @@ nav a{
     border: 1px solid transparent;
     transition: 0.6s ease;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: white;
     color: black;
 }
 
-main{
+main {
     margin: 40px auto;
 }
-section.grid-container{
+
+section.grid-container {
     width: 1000px;
     margin: 30px auto;
 }
 
-footer{
+footer {
     margin: 30px auto;
     background: black;
     text-align: center;
@@ -58,7 +67,8 @@ footer{
     /*padding-top:10px;*/
     color: white;
 }
-.footer-bottom{
+
+.footer-bottom {
     background: black;
     width: 60vw;
     text-align: center;
@@ -66,14 +76,16 @@ footer{
     margin-right: 10px;
     margin-left: 10px;
 }
-.footer-bottom p{
+
+.footer-bottom p {
     margin: 0px 40px 0 50px;
     text-align: center;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
-.footer-bottom span{
+
+.footer-bottom span {
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;

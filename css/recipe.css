@@ -1,32 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #FFBD00;
     color: black;
     margin: 20px;
 }
+
 header {
     text-align: center;
 }
-h1{
+
+h1 {
     font-size: 30px;
     display: inline-flex;
 }
+
 .logo {
-    float: top ;
+    float: top;
     width: 40px;
     height: auto;
 }
-nav{
+
+nav {
     flex: 1;
     margin-left: 100px;
     margin-right: 40px;
     list-style-type: none;
 }
-nav a{
+
+nav a {
     font-size: 25px;
     text-decoration: none;
     color: #fff;
@@ -34,172 +41,205 @@ nav a{
     border: 1px solid transparent;
     transition: 0.6s ease;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: white;
     color: black;
 }
-main{
+
+main {
     margin: 20px auto;
 }
-section.grid-container{
+
+section.grid-container {
     width: 1000px;
     margin: 30px auto;
 }
-footer{
+
+footer {
     margin: 30px auto;
     background: black;
     text-align: center;
-     color: white;
+    color: white;
 }
-.footer-bottom{
+
+.footer-bottom {
     background: black;
     width: 80vw;
     text-align: center;
     /*margin: 50px auto;*/
 
 }
-.footer-bottom p{
+
+.footer-bottom p {
     margin: 0px 40px 0 50px;
     text-align: center;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
-.footer-bottom span{
+
+.footer-bottom span {
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
 }
-.grid-container{
+
+.grid-container {
     width: 120%;
     margin: 10px auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 30px;
 }
-.grid-item{
+
+.grid-item {
     background-color: #999;
     padding: 10px 20px 20px;
     line-height: 24px;
-    grid-gap:50px;
+    grid-gap: 50px;
 }
-.grid-item h1{
+
+.grid-item h1 {
     color: #800000;
-    font-size: 18px;
+    font-size: 10px;
 }
-.grid-item p{
-    padding: 30px 30px 20px ;
+
+.grid-item p {
+    padding: 30px 30px 20px;
     font-size: 14px;
     font-family: "Open Sans";
     line-height: 24px;
 }
-.img-biryani{
-    width: 100%;
+
+.img-biryani {
+    width: 75%;
     margin-right: 10px;
 }
-.img-jeera{
-    width: 100%;
-    margin-right: 10px;
-}
-.img-lemon{
-    width: 100%;
-    margin-right: 10px;
-}
-.img-curd{
-    width: 100%;
-    margin-right: 10px;
-}
-.img-dal{
+
+.img-jeera {
     width: 100%;
     margin-right: 10px;
 }
 
- @media only screen and (min-width:768px) {
+.img-lemon {
+    width: 100%;
+    margin-right: 10px;
+}
 
-     section.grid-container{
-         width: 1000px;
-         margin: 30px auto;
+.img-curd {
+    width: 100%;
+    margin-right: 10px;
+}
 
-     }
-     .grid-container {
-         width: 900px;
-         margin: 0 auto;
-     }
-    .grid-item h1{
-         color: #800000;
-         font-size: 50px;
-     }
-     .grid-item p{
-         padding: 20px 0px 0px ;
+.img-dal {
+    width: 100%;
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    section.grid-container {
+        width: 1000px;
+        margin: 30px auto;
 
     }
-     .img-biryani{
-         width: 100%;
-         margin-right: 10px;
-     }
-     .img-jeera{
-         width: 100%;
-         margin-right: 10px;
-     }
-     .img-lemon{
-         width: 100%;
-         margin-right: 10px;
-     }
-     .img-curd{
-         width: 100%;
-         margin-right: 10px;
-     }
-     .img-dal{
-         width: 100%;
-         margin-right: 10px;
-     }
 
- }
-@media only screen and (min-width:1000px ){
+    .grid-container {
+        width: 900px;
+        margin: 0 auto;
+    }
 
-    section.grid-container{
+    .grid-item h1 {
+        color: #800000;
+        font-size: 50px;
+    }
+
+    .grid-item p {
+        padding: 20px 0px 0px;
+
+    }
+
+    .img-biryani {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .img-jeera {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .img-lemon {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .img-curd {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .img-dal {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px ) {
+
+    section.grid-container {
         width: 1000px;
         margin: 30px auto;
     }
+
     .grid-container {
         width: 1000px;
         margin: 0 auto;
     }
-    grid-item{
+
+    grid-item {
         padding: 10px 0px 0px;
         line-height: 20px;
-        grid-gap:50px;
+        grid-gap: 50px;
     }
 
-    .grid-item h1{
-       font-size: 50px;
+    .grid-item h1 {
+        font-size: 50px;
     }
-    .grid-item p{
+
+    .grid-item p {
         padding: 20px 0px 0px 30px;
 
     }
-    .img-biryani{
+
+    .img-biryani {
         width: 50%;
         float: left;
         margin-right: 10px;
 
     }
-    .img-jeera{
+
+    .img-jeera {
         width: 50%;
         float: left;
         margin-right: 10px;
     }
-    .img-lemon{
+
+    .img-lemon {
         width: 50%;
         float: left;
         margin-right: 10px;
     }
-    .img-curd{
+
+    .img-curd {
         width: 50%;
         float: left;
         margin-right: 10px;
     }
-    .img-dal{
+
+    .img-dal {
         width: 50%;
         float: left;
         margin-right: 10px;

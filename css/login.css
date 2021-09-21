@@ -1,86 +1,105 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #FFBD00;
     color: black;
     margin: 20px;
 }
+
 header {
     text-align: center;
 }
-h1{
+
+h1 {
     font-size: 30px;
     display: inline-flex;
 }
+
 .logo {
-    float: top ;
+    float: top;
     width: 40px;
     height: auto;
 }
-nav{
+
+nav {
     flex: 1;
     margin-top: 20px;
-    margin-left: 120px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     list-style-type: none;
 }
-nav a{
-    font-size: 25px;
+
+nav a {
+    font-size: 14px;
     text-decoration: none;
     color: #fff;
-    padding: 0px 30px 0px 30px;
+    padding: 0px 5px 0px 5px;
     border: 1px solid transparent;
     transition: 0.6s ease;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: white;
     color: black;
 }
-main{
+
+/*main {*/
+/*    margin: 30px auto;*/
+/*}*/
+
+section.grid-container {
+    width: 100%;
     margin: 30px auto;
-}
-section.grid-container{
-    width: 1000px;
-    margin: 20px auto;
 }
 
-.container{
+.container {
     position: relative;
     /*margin-top: 100px;*/
+    margin-right: 20px;
     margin: 30px auto;
-    width: 500px;
-    height:auto;
+    width: 300px;
+    height: auto;
     background: #dedede;
     border-radius: 5px;
 }
-.login-form{
+
+.login-form {
+
     padding: 20px 40px;
+    margin: 30px auto auto auto;
 }
-.login-form .font{
-    font-size: 20px ;
+
+.login-form .font {
+    font-size: 20px;
     color: #800000FF;
     margin: 5px 0;
 }
-.login-form input{
+
+.login-form input {
     height: 40px;
-    width: 350px;
+    width: 200px;
     padding: 0 5px;
-    font-size: 18px;
+    font-size: 14px;
     outline: none;
     border: 1px solid silver;
 }
-.login-form .font2{
+
+.login-form .font2 {
     margin-top: 50px;
-    }
-.login-form button{
+
+}
+
+.login-form button {
     margin-top: 40px;
     margin: 45px 0 30px 0;
     height: 45px;
     /*padding: 10px;*/
-    width: 365px;
+    width: 210px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -90,51 +109,245 @@ section.grid-container{
     color: #ffffff;
     background: maroon;
     border: 1px solid #3949AB;
-    }
-.login-form button:hover{
+}
+
+.login-form button:hover {
     background: #151c6a;
 }
+
 .login-form #email_error,
-.login-form #pass_error{
+.login-form #pass_error {
     margin-top: 5px;
     width: 345px;
     font-size: 18px;
     color: #c62828;
-    background:rgba(255,0,0,0.1) ;
+    background: rgba(255, 0, 0, 0.1);
     text-align: center;
     padding: 5px 8px;
     border-radius: 5px;
     border: 1px solid #EF9A9A;
     display: none;
 }
-footer{
+
+footer {
     margin: 30px auto;
     margin-left: 30px;
     background: black;
     text-align: center;
     color: white;
 }
-.footer-bottom{
+
+.footer-bottom {
     background: black;
     width: 80vw;
     text-align: center;
     margin: 50px auto;
 
 }
-.footer-bottom p{
+
+.footer-bottom p {
     /*margin: 0px 40px 0 50px;*/
     text-align: center;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
-.footer-bottom span{
+
+.footer-bottom span {
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
 }
 
+@media only screen and (min-width: 768px) {
 
+    nav {
+        flex: 1;
+        margin-top: 40px;
+        margin-left: 80px;
+        margin-right: 20px;
+        list-style-type: none;
+    }
+
+    nav a {
+        font-size: 22px;
+        text-decoration: none;
+        color: #fff;
+        padding: 0px 40px 0px 20px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+    }
+
+    nav a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .container {
+        position: relative;
+        /*margin-top: 100px;*/
+        margin-right: 20px;
+        margin: 200px auto;
+        width: 550px;
+        height: auto;
+        background: #dedede;
+        border-radius: 5px;
+    }
+
+    .login-form {
+        padding: 20px 40px;
+        margin: 30px auto auto auto;
+    }
+
+    .login-form .font {
+        font-size: 20px;
+        color: #800000FF;
+        margin: 5px 0;
+    }
+
+    .login-form input {
+        height: 40px;
+        width: 450px;
+        padding: 0 5px;
+        font-size: 25px;
+        outline: none;
+        border: 1px solid silver;
+    }
+
+    .login-form .font2 {
+        margin-top: 50px;
+
+    }
+    .login-form button {
+        margin-top: 40px;
+        margin: 45px 0 30px 0;
+        height: 45px;
+        /*padding: 10px;*/
+        width: 210px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        background: maroon;
+        border: 1px solid #3949AB;
+    }
+
+    .login-form button:hover {
+        background: #151c6a;
+    }
+
+    .login-form #email_error,
+    .login-form #pass_error {
+        margin-top: 5px;
+        width: 345px;
+        font-size: 18px;
+        color: #c62828;
+        background: rgba(255, 0, 0, 0.1);
+        text-align: center;
+        padding: 5px 8px;
+        border-radius: 5px;
+        border: 1px solid #EF9A9A;
+        display: none;
+    }
+}
+@media only screen and (min-width: 1000px ) {
+
+    nav {
+        flex: 1;
+        margin-top: 40px;
+        margin-left: 160px;
+        margin-right: 20px;
+        list-style-type: none;
+    }
+
+    nav a {
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        padding: 0px 40px 0px 20px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+    }
+
+    nav a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .container {
+        position: relative;
+        /*margin-top: 100px;*/
+        margin-right: 20px;
+        margin: 50px auto;
+        width: 600px;
+        height: auto;
+        background: #dedede;
+        border-radius: 5px;
+    }
+
+    .login-form {
+        padding: 20px 40px;
+        margin: 30px auto auto auto;
+    }
+
+    .login-form .font {
+        font-size: 20px;
+        color: #800000FF;
+        margin: 5px 0;
+    }
+
+    .login-form input {
+        height: 40px;
+        width: 450px;
+        padding: 0 5px;
+        font-size: 25px;
+        outline: none;
+        border: 1px solid silver;
+    }
+
+    .login-form .font2 {
+        margin-top: 50px;
+
+    }
+    .login-form button {
+        margin-top: 40px;
+        margin: 45px 0 30px 0;
+        height: 45px;
+        /*padding: 10px;*/
+        width: 210px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        background: maroon;
+        border: 1px solid #3949AB;
+    }
+
+    .login-form button:hover {
+        background: #151c6a;
+    }
+
+    .login-form #email_error,
+    .login-form #pass_error {
+        margin-top: 5px;
+        width: 345px;
+        font-size: 18px;
+        color: #c62828;
+        background: rgba(255, 0, 0, 0.1);
+        text-align: center;
+        padding: 5px 8px;
+        border-radius: 5px;
+        border: 1px solid #EF9A9A;
+        display: none;
+    }
+
+}
 
 
 

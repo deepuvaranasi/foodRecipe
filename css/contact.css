@@ -1,34 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #FFBD00;
     color: black;
     margin: 20px;
     /*font-family: 'Open Sans', sans-serif;*/
 }
+
 header {
     text-align: center;
 }
-h1{
+
+h1 {
     font-size: 30px;
     display: inline-flex;
 }
+
 .logo {
-    float: top ;
+    float: top;
     width: 40px;
     height: auto;
 }
-nav{
+
+nav {
     margin-top: 20px;
     flex: 1;
     margin-left: 120px;
     margin-right: 40px;
     list-style-type: none;
 }
-nav a{
+
+nav a {
     font-size: 25px;
     text-decoration: none;
     color: #fff;
@@ -36,29 +43,33 @@ nav a{
     border: 1px solid transparent;
     transition: 0.6s ease;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: white;
     color: black;
 }
-section.grid-container{
+
+section.grid-container {
     width: 1000px;
     margin: 30px auto;
 }
 
-.contact-section h1{
+.contact-section h1 {
     margin-top: 20px;
     margin-left: 450px;
     text-align: center;
     color: maroon;
     font-size: 20px;
 }
-.contact-form{
+
+.contact-form {
     max-width: 600px;
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
 }
-.contact-form-text{
+
+.contact-form-text {
     font-size: 18px;
     /*margin-top: 25px;*/
     display: block;
@@ -72,14 +83,17 @@ section.grid-container{
     color: maroon;
     transition: 0.5s;
 }
-.contact-form-text:focus{
+
+.contact-form-text:focus {
     box-shadow: 0 0 10px 4px maroon;
 }
-textarea.contact-form-text{
+
+textarea.contact-form-text {
     resize: none;
     height: 100px;
 }
-.contact-form-btn{
+
+.contact-form-btn {
     float: right;
     border: 0;
     background: maroon;
@@ -89,6 +103,7 @@ textarea.contact-form-text{
     cursor: pointer;
     transition: 0.5s;
 }
-.contact-form-btn:hover{
+
+.contact-form-btn:hover {
     background: #2980b9;
 }
